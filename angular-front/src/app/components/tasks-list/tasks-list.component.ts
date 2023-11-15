@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Task } from 'src/app/models/task.model';
 import { TaskService } from 'src/app/services/task.service';
 
@@ -8,6 +8,9 @@ import { TaskService } from 'src/app/services/task.service';
   styleUrls: ['./tasks-list.component.css'],
 })
 export class TasksListComponent {
+setActiveTasks(arg0: Task[]|undefined,_t16: number) {
+throw new Error('Method not implemented.');
+}
   tasks?: Task[];
   currentTask: Task = {};
   currentIndex = -1;

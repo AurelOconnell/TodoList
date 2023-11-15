@@ -59,14 +59,14 @@
     <button
       class="badge badge-primary mr-2"
       *ngIf="currentTask.status"
-      (click)="updateStatus(false)"
+      (click)="updateTask()"
     >
       Done
     </button>
     <button
       *ngIf="!currentTask.status"
       class="badge badge-primary mr-2"
-      (click)="updateStatus(true)"
+      (click)="updateTask()"
     >
       Pending
     </button>
